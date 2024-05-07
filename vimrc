@@ -22,6 +22,7 @@ set showmode
 set showmatch
 set hlsearch
 set history=1000
+set signcolumn=no
 
 " Completion
 set wildmenu
@@ -46,6 +47,10 @@ nnoremap <C-s>s :q!<CR>
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:ale_linters_ignore = {
+      \ 'c': ['include'],
+      \ }
+
 
 " Vim Plugged
 call plug#begin('~/.vim/plugged')
