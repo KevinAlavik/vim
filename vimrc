@@ -75,6 +75,8 @@ call plug#begin('~/.vim/plugged')
   	Plug 'junegunn/fzf.vim'
 	Plug 'vim-scripts/c.vim'
 	Plug 'vhdirk/vim-cmake'
+	Plug 'valloric/youcompleteme'
+	Plug 'ervandew/supertab'
 call plug#end()
 
 set t_Co=256
