@@ -47,10 +47,21 @@ nnoremap <C-s>s :q!<CR>
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:ale_linters_ignore = {
-      \ 'c': ['include'],
-      \ }
 
+" Cursor
+augroup cursorline_insert
+    autocmd!
+    autocmd InsertEnter * set cursorline
+    autocmd InsertLeave * set nocursorline
+augroup END
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+augroup cursorline_insert_style
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
 
 " Vim Plugged
 call plug#begin('~/.vim/plugged')
