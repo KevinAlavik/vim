@@ -33,13 +33,34 @@ nnoremap <leader>ef :NERDTreeFocus<CR>
 nnoremap <leader>ee :NERDTreeToggle<CR>
 nnoremap <leader>eq :NERDTreeClose<CR>
 nnoremap <leader>cc :source ~/.vimrc<CR>
+nnoremap <leader>pi :PlugInstall<CR>
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg	:GFiles<CR>
+nnoremap <leader>fh :History<CR>
+nnoremap <leader>fc :Commits<CR>
 nnoremap <leader> :
-inoremap <C-s> :w<CR>
-inoremap <C-s>s :q!<CR>
+nnoremap <C-s> :w<CR>
+nnoremap <C-s>s :q!<CR>
+
+" Plugin config
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Vim Plugged
 call plug#begin('~/.vim/plugged')
 	Plug 'dense-analysis/ale'
 	Plug 'preservim/nerdtree'
 	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'tpope/vim-fugitive'
+	Plug 'dikiaap/minimalist'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  	Plug 'junegunn/fzf.vim'
+	Plug 'vim-scripts/c.vim'
+	Plug 'vhdirk/vim-cmake'
 call plug#end()
+
+set t_Co=256
+syntax on
+colorscheme minimalist
