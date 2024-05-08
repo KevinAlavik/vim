@@ -39,6 +39,7 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fg	:GFiles<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fc :Commits<CR>
+nnoremap <leader>tt :terminal<CR>
 nnoremap <leader> :
 nnoremap <C-s> :w<CR>
 nnoremap <C-s>s :q!<CR>
