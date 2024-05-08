@@ -4,6 +4,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Config for projects
+set exrc
+set secure
+
 " UI stuff
 syntax on
 set relativenumber
