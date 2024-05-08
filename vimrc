@@ -77,15 +77,15 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
-	Plug 'dikiaap/minimalist'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   	Plug 'junegunn/fzf.vim'
 	Plug 'vim-scripts/c.vim'
 	Plug 'vhdirk/vim-cmake'
 	Plug 'valloric/youcompleteme'
 	Plug 'ervandew/supertab'
+	Plug 'NLKNguyen/papercolor-theme'	
 call plug#end()
 
 set t_Co=256
-syntax on
-colorscheme minimalist
+set background=dark
+colorscheme PaperColor
