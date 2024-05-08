@@ -54,8 +54,8 @@ nnoremap <C-s>s :q!<CR>
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" Plugin config
-let g:airline_theme='minimalist'
+" Airline config
+let g:airline_theme='onehalfdark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -87,9 +87,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vhdirk/vim-cmake'
 	Plug 'valloric/youcompleteme'
 	Plug 'ervandew/supertab'
-	Plug 'NLKNguyen/papercolor-theme'	
+	Plug 'sonph/onehalf', { 'rtp': 'vim' }
 call plug#end()
 
 set t_Co=256
+set cursorline
 set background=dark
-colorscheme PaperColor
+colorscheme onehalfdark
