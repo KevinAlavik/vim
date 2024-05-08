@@ -43,6 +43,9 @@ nnoremap <leader> :
 nnoremap <C-s> :w<CR>
 nnoremap <C-s>s :q!<CR>
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 " Plugin config
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
