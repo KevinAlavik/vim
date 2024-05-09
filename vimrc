@@ -51,6 +51,7 @@ nnoremap <leader>wq :bdelete<CR>
 nnoremap <leader> :
 nnoremap <C-s> :w<CR>
 nnoremap <C-s>s :q!<CR>
+nnoremap <C-n> :new
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
