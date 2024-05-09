@@ -27,6 +27,7 @@ set showmatch
 set hlsearch
 set history=1000
 set signcolumn=no
+set nohlsearch
 
 " Completion
 set wildmenu
